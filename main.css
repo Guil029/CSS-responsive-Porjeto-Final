@@ -90,3 +90,17 @@ button {
 #produtos p {
     padding: 10px 0;
 }
+
+@media screen and (max-width:640) {
+    .produtos{
+        display: block;}
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    #sobre {
+        align-items: flex-start;
+        display: block;
+    }
