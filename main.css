@@ -87,20 +87,34 @@ button {
     font-weight: bold;
 }
 
-#produtos p {
-    padding: 10px 0;
+#produtos {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
 }
 
-@media screen and (max-width:640) {
-    .produtos{
-        display: block;}
+#produtos img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+#produtos p {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media screen and (min-width:641px) and (max-width: 1023px) {
+    #produtos {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .container {
-        max-width: 90%;
+    #produtos p {
+        flex-basis: 100%;
     }
-
-    #sobre {
-        align-items: flex-start;
-        display: block;
-    }
+}
