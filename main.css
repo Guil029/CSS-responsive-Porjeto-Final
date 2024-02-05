@@ -101,11 +101,9 @@ button {
     height: auto;
 }
 
-#produtos p {
+#produtos p{
     margin: 0;
     padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
 }
 
 @media (min-width: 1024px) {
@@ -139,7 +137,6 @@ button {
 
     #produtos div p {
         justify-content: center;
-
     }
 }
 
@@ -164,5 +161,36 @@ button {
 
     #produtos li {
         width: 40%
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 10px;
+        width: 100%;
+    }
+
+    #sobre {
+        flex-direction: column;
+    }
+
+    #sobre img {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 24px;
+    }
+
+    #produtos, li {
+        width: 100%;
+        padding: 24px;
+        display: block;
+    }
+
+    #produtos {
+        display: flex;
     }
 }
