@@ -108,13 +108,61 @@ button {
     text-align: center;
 }
 
-@media screen and (min-width:641px) and (max-width: 1023px) {
-    #produtos {
-        flex-direction: column;
-        align-items: center;
+@media (min-width: 1024px) {
+    body {
+        font-size: 16px;
     }
 
-    #produtos p {
-        flex-basis: 100%;
+    header {
+        padding: 20px;
+    }
+
+    #sobre {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #produtos ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #produtos li {
+        width: 48%; /* Para garantir espaço entre os itens */
+        margin-bottom: 20px;
+    }
+
+    #produtos button {
+        width:300px;
+    }
+
+    #produtos div p {
+        justify-content: center;
+
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #sobre img {
+        width: 100%;
+    }
+
+    #produtos ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #produtos li {
+        width: 40%
     }
 }
