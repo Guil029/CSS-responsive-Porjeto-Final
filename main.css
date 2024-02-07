@@ -184,10 +184,13 @@ button {
         padding: 24px;
     }
 
+    #produtos ul {
+        flex-direction: column; 
+    }
+
     #produtos, li {
         width: 100%;
-        padding: 24px;
-        display: block;
+        margin-bottom: 20px;
     }
 
     #produtos {
